@@ -8,7 +8,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/HoneyLuka/MMRequest.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/rainfyou'
   s.ios.deployment_target = '8.0'
-  s.source_files = 'MMRequest/Classes/**/*'
+  s.public_header_files = 'MMRequest/Classes/*.{h}'
+  s.source_files = 'MMRequest/Classes/*.{h,m}'
   s.dependency 'AFNetworking'
   s.dependency 'YYModel'
   s.dependency 'PromiseKit', '~> 1.7'
